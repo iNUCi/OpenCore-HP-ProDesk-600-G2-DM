@@ -1,7 +1,7 @@
 # OpenCore config for the HP ProDesk 600 G2 Mini
 ## Device Specs
 **CPU:** Intel Core i5-6500T (Skylake)\
-**GPU:** Intel HD Graphics 530\
+**GPU:** Intel HD Graphics 530 (spoofed as Kaby Lake on Ventura and newer)\
 **Chipset:** Intel Q150\
 **Storage:** NVMe WDC PC SN520, SATA SSD Samsung 870 EVO\
 **Ethernet:** Intel Ethernet Connection I219-LM\
@@ -62,7 +62,7 @@ After installing, [disable verbose startup if you want to](https://dortania.gith
 - [IntelMausi](https://github.com/acidanthera/IntelMausi) (for ethernet port)
 - [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM) (for Bluetooth)
 - [IntelBluetoothFirmware, IntelBTPatcher](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) (for Bluetooth)
-- [NVMeFix](https://github.com/acidanthera/NVMeFix) **(only if NVMe storage is used)**
+- [NVMeFix](https://github.com/acidanthera/NVMeFix) **(only if NVMe storage is present)**
 - [RestrictEvents](https://github.com/acidanthera/RestrictEvents) **(used for OTA updates on Ventura and newer,** +misc fixes)
 - [HibernationFixup](https://github.com/acidanthera/HibernationFixup) (self-explanatory)
 - [RTCMemoryFixup](https://github.com/acidanthera/RTCMemoryFixup) (fixes CMOS Checksum Mismatch startup error after macOS use)
