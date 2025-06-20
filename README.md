@@ -28,6 +28,7 @@ BIOS Version is N22 Ver 02.60, latest from HP's website
 |VGA Port|❌|Screen loses signal when GPU driver is loaded|
 |Wi-Fi|✅|
 |Bluetooth|⚠️|Can't seem to connect earphones?|
+|iServices|✅|
 |Sleep|✅|
 
 ## Config
@@ -37,6 +38,7 @@ Kexts used are listed in the **Kexts** section below. USB map is there too, but 
 ACPI patches used are included in the repo and listed in the **ACPI Patches** section below. If they don't work for you, [make your own.](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-methods.html)\
 If using OpenCanopy and/or enabling the boot chime, also extract Resources from [OCBinaryData](https://github.com/acidanthera/OcBinaryData)\
 Copy the config to your EFI/OC folder, then open it in ProperTree and do an OC Snapshot (Ctrl+R).\
+**VERY IMPORTANT!** Fill out MLB, ROM, SystemUUID And SystemSerialNumber as according to https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html (use iMac17,1 SMBIOS)\
 **Don't forget to download the appropriate version of macOS recovery if installing for the first time.**
 
 Finally, try to boot OpenCore. If all goes well, you should see macOS/Recovery Mode.\
