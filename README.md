@@ -7,6 +7,8 @@
 **Ethernet:** Intel Ethernet Connection I219-LM\
 **WiFi/Bluetooth:** Intel Dual Band Wireless-AC 7265\
 **Audio:** Realtek ALC221, **alcid=11**
+## Screenshots
+![About This Hack](/photos/about-this-hack.png)
 ## Version
 Tested on macOS 12.7.6 and 15.5, but anything from 10.11 up to even 26 should work if you know how to\
 BIOS Version is N22 Ver 02.60, latest from HP's website
