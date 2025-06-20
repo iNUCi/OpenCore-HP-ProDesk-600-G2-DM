@@ -27,13 +27,14 @@ BIOS Version is N22 Ver 02.60, latest from HP's website
 |DisplayPort|✅|
 |VGA Port|❌|Screen loses signal when GPU driver is loaded|
 |Wi-Fi|✅|
+|Ethernet|✅|
 |Bluetooth|⚠️|Can't seem to connect earphones?|
 |iServices|✅|
 |Sleep|✅|
 
 ## Config
 [OpenCore](https://github.com/acidanthera/OpenCorePkg) version used is 1.0.4, if you want to go higher follow the [updating guide](https://dortania.github.io/OpenCore-Post-Install/universal/update.html#updating-opencore)\
-Download required files according to the Dortania OpenCore guide (Drivers, Tools, etc.). The ones i used are listed in the config. Make sure to use regular HFSPlus driver from [OCBinaryData](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi).\
+Download required files [according to the Dortania OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/ktext.html) (Drivers, Tools, etc.). The ones i used are listed in the config. Make sure to use regular HFSPlus driver from [OCBinaryData](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi).\
 Kexts used are listed in the **Kexts** section below. USB map is there too, but if it doesn't work for you, [map USB ports yourself.](https://github.com/USBToolBox/tool)\
 ACPI patches used are included in the repo and listed in the **ACPI Patches** section below. If they don't work for you, [make your own.](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-methods.html)\
 If using OpenCanopy boot menu GUI and/or enabling the boot chime, also extract Resources from [OCBinaryData](https://github.com/acidanthera/OcBinaryData)\
