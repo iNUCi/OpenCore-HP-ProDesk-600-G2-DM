@@ -1,6 +1,6 @@
 # OpenCore config for the HP ProDesk 600 G2 Mini
 ## Device Specs
-**CPU:** Intel Core i5-6500T\
+**CPU:** Intel Core i5-6500T (Skylake)\
 **GPU:** Intel HD Graphics 530\
 **Chipset:** Intel Q150\
 **Storage:** NVMe WDC PC SN520, SATA SSD Samsung 870 EVO\
