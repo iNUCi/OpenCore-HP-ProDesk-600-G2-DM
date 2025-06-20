@@ -1168,14 +1168,14 @@
 				<key>revpatch</key>
 				<string>auto</string>
 				<key>rtc-blacklist</key>
-				<data></data>
+				<data>WFmwsbKz0Nrb3N3e3w==</data>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>ForceDisplayRotationInEFI</key>
 				<integer>0</integer>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 rtcfx_exclude=58-59,B0-B3,D0-DF</string>
+				<string></string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
