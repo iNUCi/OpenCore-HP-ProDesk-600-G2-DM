@@ -360,7 +360,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>AFAAbABhAHQAZgBvAHIAbQBTAHUAcABwAG8AcgB0AC4AcABsAGkAcwB0</data>
 				<key>Identifier</key>
@@ -432,7 +432,11 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AAASGQ==</data>
+				<data>AAASWQ==</data>
+				<key>device-id</key>
+				<data>ElkAAA==</data>
+				<key>AAPL,GfxYTile</key>
+				<data>AQAAAA==</data>
 				<key>rps-control</key>
 				<data>AQAAAA==</data>
 				<key>force-online</key>
@@ -655,13 +659,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>AirportItlwm.kext</string>
+				<string>itlwm.kext</string>
 				<key>Comment</key>
-				<string>AirportItlwm.kext</string>
+				<string>itlwm.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirportItlwm</string>
+				<string>Contents/MacOS/itlwm</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1184,7 +1188,7 @@
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
 				<key>revpatch</key>
-				<string>auto</string>
+				<string>sbvmm,auto</string>
 				<key>rtc-blacklist</key>
 				<data>WFmwsbKz0Nrb3N3e3w==</data>
 			</dict>

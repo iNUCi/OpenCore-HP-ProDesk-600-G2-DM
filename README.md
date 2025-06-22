@@ -1,7 +1,7 @@
 # OpenCore config for the HP ProDesk 600 G2 Mini
 ## Device Specs
 **CPU:** Intel Core i5-6500T (Skylake)\
-**GPU:** Intel HD Graphics 530 (spoofed as Kaby Lake on Ventura and newer)\
+**GPU:** Intel HD Graphics 530 **(spoofed as Kaby Lake on Ventura and newer)**\
 **Chipset:** Intel Q150\
 **Storage:** NVMe WDC PC SN520, SATA SSD Samsung 870 EVO\
 **Ethernet:** Intel Ethernet Connection I219-LM\
@@ -10,7 +10,7 @@
 ## Screenshots
 ![About This Hack](/photos/about-this-hack.png)
 ## Version
-Tested on macOS 12.7.6 and 15.5, but anything from 10.11 up to even 26 should work if you know how to\
+Tested on macOS 12.7.6 and **15.5**, but anything from 10.11 up to even 26 should work if you know how to\
 BIOS Version is N22 Ver 02.60, latest from HP's website
 ## Status
 ### ✅ - Fully supported
@@ -47,7 +47,7 @@ Kexts used are listed in the **Kexts** section below. USB map is there too, but 
 ACPI patches used are included in the repo and listed in the **ACPI Patches** section below. If they don't work for you, [make your own.](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-methods.html)\
 If using OpenCanopy boot menu GUI and/or enabling the boot chime, also extract Resources from [OCBinaryData](https://github.com/acidanthera/OcBinaryData)\
 Copy the config.plist to your EFI/OC folder, then open it in ProperTree and do an OC Snapshot (Ctrl+R). **Remember that kext order is important: Lilu, VirtualSMC and WhateverGreen before anything else**\
-**VERY IMPORTANT!** Fill out MLB, ROM, SystemUUID And SystemSerialNumber as according to https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html (use iMac17,1 SMBIOS)\
+**VERY IMPORTANT!** Fill out MLB, ROM, SystemUUID And SystemSerialNumber as according to https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html **(use iMac17,1 SMBIOS)**\
 **Don't forget to download the appropriate version of macOS recovery if installing for the first time.**
 
 Finally, try to boot OpenCore. If all goes well, you should see macOS/Recovery Mode.\
