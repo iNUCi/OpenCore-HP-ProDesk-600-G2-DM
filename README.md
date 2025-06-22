@@ -38,7 +38,7 @@ Download required files [according to the Dortania OpenCore guide](https://dorta
 Kexts used are listed in the **Kexts** section below. USB map is there too, but if it doesn't work for you, [map USB ports yourself.](https://github.com/USBToolBox/tool)\
 ACPI patches used are included in the repo and listed in the **ACPI Patches** section below. If they don't work for you, [make your own.](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-methods.html)\
 If using OpenCanopy boot menu GUI and/or enabling the boot chime, also extract Resources from [OCBinaryData](https://github.com/acidanthera/OcBinaryData)\
-Copy the config.plist to your EFI/OC folder, then open it in ProperTree and do an OC Snapshot (Ctrl+R).\
+Copy the config.plist to your EFI/OC folder, then open it in ProperTree and do an OC Snapshot (Ctrl+R). **Remember that kext order is important: Lilu, VirtualSMC and WhateverGreen before anything else**\
 **VERY IMPORTANT!** Fill out MLB, ROM, SystemUUID And SystemSerialNumber as according to https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html (use iMac17,1 SMBIOS)\
 **Don't forget to download the appropriate version of macOS recovery if installing for the first time.**
 
