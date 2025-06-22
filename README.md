@@ -34,12 +34,11 @@ BIOS Version is N22 Ver 02.60, latest from HP's website
 
 ## Config
 BIOS settings: 
-- **UEFI boot** enabled
-- **legacy boot** disabled
-- **Secure Boot** disabled
-- **VT-x** enabled
-- **VT-d** disabled or enabled **depending on DevirtualiseMmio and DMAR ACPI patch**
-- 256MB or 512MB of VRAM **allocated to iGPU**
+- **"Advanced > Secure Boot Configuration" -> "Legacy Support Disable and Secure Boot Disable"**
+- **Advanced > System Options > VT-x** enabled
+- **Advanced > System Options > VT-d** disabled or enabled **depending on DevirtualiseMmio and DMAR ACPI patch**
+- **Advanced > Built-in Device Options >** 256MB or 512MB of VRAM **video memory**
+- If OpenCore still doesn't boot for unknown reasons, try **disabling Advanced > System Options > Fast Boot**
 
 [OpenCore](https://github.com/acidanthera/OpenCorePkg) version used is 1.0.4, if you want to go higher follow the [updating guide](https://dortania.github.io/OpenCore-Post-Install/universal/update.html#updating-opencore)\
 Download required files [according to the Dortania OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/opencore-efi.html) (Drivers, Tools, etc.). The ones i used are listed in the config. Make sure to use regular HFSPlus driver from [OCBinaryData](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi).\
