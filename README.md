@@ -33,6 +33,14 @@ BIOS Version is N22 Ver 02.60, latest from HP's website
 |Sleep|✅|
 
 ## Config
+BIOS settings: 
+- **UEFI boot** enabled
+- **legacy boot** disabled
+- **Secure Boot** disabled
+- **VT-x** enabled
+- **VT-d** disabled or enabled **depending on DevirtualiseMmio and DMAR ACPI patch**
+- 256MB or 512MB of VRAM **allocated to iGPU**
+
 [OpenCore](https://github.com/acidanthera/OpenCorePkg) version used is 1.0.4, if you want to go higher follow the [updating guide](https://dortania.github.io/OpenCore-Post-Install/universal/update.html#updating-opencore)\
 Download required files [according to the Dortania OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/opencore-efi.html) (Drivers, Tools, etc.). The ones i used are listed in the config. Make sure to use regular HFSPlus driver from [OCBinaryData](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi).\
 Kexts used are listed in the **Kexts** section below. USB map is there too, but if it doesn't work for you, [map USB ports yourself.](https://github.com/USBToolBox/tool)\
@@ -43,6 +51,7 @@ Copy the config.plist to your EFI/OC folder, then open it in ProperTree and do a
 **Don't forget to download the appropriate version of macOS recovery if installing for the first time.**
 
 Finally, try to boot OpenCore. If all goes well, you should see macOS/Recovery Mode.\
+**Sequoia and Tahoe require HeliPort app to connect to WiFi network.** Use [UnPlugged](https://github.com/corpnewt/UnPlugged) for offline installation.\
 After installing, [disable verbose startup if you want to](https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html)
 ## ACPI Patches (made with SSDTTime)
 - SSDT-PLUG (PluginType)
