@@ -10,7 +10,7 @@
 ## Screenshots
 ![About This Hack](/../sequoia/photos/about-this-hack.png)
 ## Version
-Tested on macOS 12.7.6 and **15.5**, but anything from 10.11 up to even 26 should work if you know how to\
+Tested on macOS 12.7.6 and **15.5**, but anything from 10.11 up to even 26 should work if you know how to (check branches)\
 BIOS Version is N22 Ver 02.60, latest from HP's website
 ## Status
 ### ✅ - Fully supported
@@ -58,7 +58,7 @@ After installing, [disable verbose startup if you want to](https://dortania.gith
 - SSDT-EC (FakeEC)
 - SSDT-USBX
 - SSDT-HPET (Fix HPET)
-- DMAR (Fix DMAR, **used if VT-d is enabled in BIOS**)
+- DMAR (Fix DMAR, **used if VT-d is enabled in BIOS and if DevirtualiseMmio=true**)
 ## Kexts (download separately)
 - [Lilu](https://github.com/acidanthera/Lilu)
 - [VirtualSMC](https://github.com/acidanthera/VirtualSMC)
