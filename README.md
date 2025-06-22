@@ -10,7 +10,7 @@
 ## Screenshots
 ![About This Hack](/photos/about-this-hack.png)
 ## Version
-Tested on macOS 12.7.6 and 15.5, but anything from 10.11 up to even 26 should work if you know how to\
+Tested on macOS **12.7.6** and 15.5, but anything from 10.11 up to even 26 should work if you know how to\
 BIOS Version is N22 Ver 02.60, latest from HP's website
 ## Status
 ### ✅ - Fully supported
@@ -47,18 +47,18 @@ Kexts used are listed in the **Kexts** section below. USB map is there too, but 
 ACPI patches used are included in the repo and listed in the **ACPI Patches** section below. If they don't work for you, [make your own.](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-methods.html)\
 If using OpenCanopy boot menu GUI and/or enabling the boot chime, also extract Resources from [OCBinaryData](https://github.com/acidanthera/OcBinaryData)\
 Copy the config.plist to your EFI/OC folder, then open it in ProperTree and do an OC Snapshot (Ctrl+R). **Remember that kext order is important: Lilu, VirtualSMC and WhateverGreen before anything else**\
-**VERY IMPORTANT!** Fill out MLB, ROM, SystemUUID And SystemSerialNumber as according to https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html (use iMac17,1 SMBIOS)\
+**VERY IMPORTANT!** Fill out MLB, ROM, SystemUUID And SystemSerialNumber as according to https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html **(use iMac17,1 SMBIOS)**\
 **Don't forget to download the appropriate version of macOS recovery if installing for the first time.**
 
 Finally, try to boot OpenCore. If all goes well, you should see macOS/Recovery Mode.\
-**Sequoia and Tahoe require [HeliPort app](https://github.com/OpenIntelWireless/HeliPort) to connect to WiFi network.** Use [UnPlugged](https://github.com/corpnewt/UnPlugged) for offline installation.\
+Sequoia and Tahoe require [HeliPort app](https://github.com/OpenIntelWireless/HeliPort) to connect to WiFi network. Use [UnPlugged](https://github.com/corpnewt/UnPlugged) for offline installation.\
 After installing, [disable verbose startup if you want to](https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html)
 ## ACPI Patches (made with SSDTTime)
 - SSDT-PLUG (PluginType)
 - SSDT-EC (FakeEC)
 - SSDT-USBX
 - SSDT-HPET (Fix HPET)
-- DMAR (Fix DMAR, **used if VT-d is enabled in BIOS**)
+- DMAR (Fix DMAR, **used if VT-d is enabled in BIOS and if DevirtualiseMmio=true**)
 ## Kexts (download separately)
 - [Lilu](https://github.com/acidanthera/Lilu)
 - [VirtualSMC](https://github.com/acidanthera/VirtualSMC)
@@ -72,7 +72,7 @@ After installing, [disable verbose startup if you want to](https://dortania.gith
 - [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM) (for Bluetooth)
 - [IntelBluetoothFirmware, IntelBTPatcher](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) (for Bluetooth)
 - [NVMeFix](https://github.com/acidanthera/NVMeFix) **(only if NVMe storage is present)**
-- [RestrictEvents](https://github.com/acidanthera/RestrictEvents) **(used for OTA updates on Ventura and newer,** +misc fixes)
+- [RestrictEvents](https://github.com/acidanthera/RestrictEvents) (used for OTA updates on Ventura and newer, +misc fixes)
 - [HibernationFixup](https://github.com/acidanthera/HibernationFixup) (self-explanatory)
 - [RTCMemoryFixup](https://github.com/acidanthera/RTCMemoryFixup) (fixes CMOS Checksum Mismatch startup error after macOS use)
 - [FeatureUnlock](https://github.com/acidanthera/FeatureUnlock) (optional, see details on repo)
