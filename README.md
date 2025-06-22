@@ -57,7 +57,7 @@ After installing, [disable verbose startup if you want to](https://dortania.gith
    - SMCSuperIO (fan speed monitoring)
 - [WhateverGreen](https://github.com/acidanthera/WhateverGreen) (for graphics)
 - [AppleALC](https://github.com/acidanthera/AppleALC) (for audio)
-- [USBMap](https://github.com/corpnewt/USBMap) (included in repo)
+- [USBToolBox, UTBMap](https://github.com/USBToolBox/kext) (my own map included in repo)
 - [AirportItlwm/itlwm](https://github.com/OpenIntelWireless/itlwm) (for wifi)
 - [IntelMausi](https://github.com/acidanthera/IntelMausi) (for ethernet port)
 - [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM) (for Bluetooth)
