@@ -51,7 +51,7 @@ Copy the config.plist to your EFI/OC folder, then open it in ProperTree and do a
 **Don't forget to download the appropriate version of macOS recovery if installing for the first time.**
 
 Finally, try to boot OpenCore. If all goes well, you should see macOS/Recovery Mode.\
-**Sequoia and Tahoe require HeliPort app to connect to WiFi network.** Use [UnPlugged](https://github.com/corpnewt/UnPlugged) for offline installation.\
+**Sequoia and Tahoe require [HeliPort app](https://github.com/OpenIntelWireless/HeliPort) to connect to WiFi network.** Use [UnPlugged](https://github.com/corpnewt/UnPlugged) for offline installation.\
 After installing, [disable verbose startup if you want to](https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html)
 ## ACPI Patches (made with SSDTTime)
 - SSDT-PLUG (PluginType)
