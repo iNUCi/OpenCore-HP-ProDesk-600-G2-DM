@@ -57,7 +57,7 @@ After installing, [disable verbose startup if you want to](https://dortania.gith
 - SSDT-EC (FakeEC)
 - SSDT-USBX
 - SSDT-HPET (Fix HPET)
-- DMAR (Fix DMAR, **used if VT-d is enabled in BIOS and if DisableIoMapper=true**)
+- DMAR (Fix DMAR, **used if VT-d is enabled in BIOS and if DisableIoMapper=false**)
 ## Kexts (download separately)
 - [Lilu](https://github.com/acidanthera/Lilu)
 - [VirtualSMC](https://github.com/acidanthera/VirtualSMC)

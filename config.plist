@@ -331,7 +331,7 @@
 				<key>Comment</key>
 				<string>MMIO devirt 0xF80FA000 (0x1 pages, 0x8000000000000001)</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 			</dict>
 			<dict>
 				<key>Address</key>
@@ -339,7 +339,7 @@
 				<key>Comment</key>
 				<string>MMIO devirt 0xF80FD000 (0x1 pages, 0x8000000000000001)</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 			</dict>
 			<dict>
 				<key>Address</key>
@@ -347,7 +347,7 @@
 				<key>Comment</key>
 				<string>MMIO devirt 0xFE000000 (0x11 pages, 0x8000000000000001)</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>Patch</key>
@@ -386,7 +386,7 @@
 			<key>ClearTaskSwitchBit</key>
 			<false/>
 			<key>DevirtualiseMmio</key>
-			<false/>
+			<true/>
 			<key>DisableSingleUser</key>
 			<false/>
 			<key>DisableVariableWrite</key>
