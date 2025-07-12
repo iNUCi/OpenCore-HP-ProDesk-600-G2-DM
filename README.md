@@ -28,7 +28,7 @@ BIOS Version is N22 Ver 02.60, latest from HP's website
 |VGA Port|❌|Screen loses signal when GPU driver is loaded|
 |Wi-Fi|✅|
 |Ethernet|✅|
-|Bluetooth|⚠️|Can't seem to connect earphones?|
+|Bluetooth|✅||
 |iServices|✅|
 |Sleep|✅|
 
@@ -40,7 +40,7 @@ BIOS settings:
 - **Advanced > Built-in Device Options >** 256MB or 512MB of VRAM **video memory**
 - If OpenCore still doesn't boot for unknown reasons, try **disabling Advanced > System Options > Fast Boot**
 
-[OpenCore](https://github.com/acidanthera/OpenCorePkg) version used is 1.0.4, if you want to go higher follow the [updating guide](https://dortania.github.io/OpenCore-Post-Install/universal/update.html#updating-opencore)\
+[OpenCore](https://github.com/acidanthera/OpenCorePkg) version used is 1.0.5, if you want to go higher follow the [updating guide](https://dortania.github.io/OpenCore-Post-Install/universal/update.html#updating-opencore)\
 Download required files [according to the Dortania OpenCore guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/opencore-efi.html) (Drivers, Tools, etc.). The ones i used are listed in the config. Make sure to use regular HFSPlus driver from [OCBinaryData](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi).\
 Kexts used are listed in the **Kexts** section below. USB map is there too, but if it doesn't work for you, [map USB ports yourself.](https://github.com/USBToolBox/tool)\
 ACPI patches used are included in the repo and listed in the **ACPI Patches** section below. If they don't work for you, [make your own.](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-methods.html)\
