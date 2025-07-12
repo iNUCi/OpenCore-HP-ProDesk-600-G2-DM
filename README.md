@@ -36,7 +36,7 @@ BIOS Version is N22 Ver 02.60, latest from HP's website
 BIOS settings: 
 - **"Advanced > Secure Boot Configuration" -> "Legacy Support Disable and Secure Boot Disable"**
 - **Advanced > System Options > VT-x** enabled
-- **Advanced > System Options > VT-d** disabled or enabled **depending on DevirtualiseMmio and DMAR ACPI patch**
+- **Advanced > System Options > VT-d** disabled or enabled **depending on DisableIoMapper and DMAR ACPI patch**
 - **Advanced > Built-in Device Options >** 256MB or 512MB of VRAM **video memory**
 - If OpenCore still doesn't boot for unknown reasons, try **disabling Advanced > System Options > Fast Boot**
 
@@ -57,7 +57,7 @@ After installing, [disable verbose startup if you want to](https://dortania.gith
 - SSDT-EC (FakeEC)
 - SSDT-USBX
 - SSDT-HPET (Fix HPET)
-- DMAR (Fix DMAR, **used if VT-d is enabled in BIOS and if DevirtualiseMmio=true**)
+- DMAR (Fix DMAR, **used if VT-d is enabled in BIOS and if DisableIoMapper=true**)
 ## Kexts (download separately)
 - [Lilu](https://github.com/acidanthera/Lilu)
 - [VirtualSMC](https://github.com/acidanthera/VirtualSMC)
